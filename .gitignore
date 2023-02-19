@@ -7,3 +7,4 @@ riderModule.iml
 .git
 runtimes/
 output/
+.DS_Store
