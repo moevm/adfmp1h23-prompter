@@ -11,8 +11,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="80dp"
         android:gravity="center"
         android:text="Простой суфлер"
         android:textColor="@color/black"
@@ -22,40 +21,102 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <Button-->
-<!--        android:id="@+id/doc"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="70dp"-->
-<!--        android:layout_marginTop="388dp"-->
-<!--        android:backgroundTint="#BDBDBD"-->
-<!--        android:text="Button"-->
-<!--        android:textColor="@color/black"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/delete"-->
-<!--        android:layout_width="20dp"-->
-<!--        android:layout_height="20dp"-->
-<!--        android:elevation="2dp"-->
-<!--        android:src="@drawable/outline_close_black_18"-->
-<!--        android:text="Button"-->
-<!--        android:layout_margin="10dp"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/doc"-->
-<!--        app:layout_constraintHorizontal_bias="0.954"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/doc" />-->
-
-    <ListView
-        android:id="@+id/reportList"
+    <TextView
+        android:id="@+id/screen_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Мои доклады"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/doc1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#BDBDBD"
+        android:text="История android"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_title" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:elevation="2dp"
+        android:src="@drawable/outline_close_black_18"
+        android:text="Button"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/doc1"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintTop_toTopOf="@+id/doc1" />
+
+    <Button
+        android:id="@+id/doc2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#BDBDBD"
+        android:text="E2E тестирование"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc1" />
+
+    <ImageView
+        android:id="@+id/delete2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:elevation="2dp"
+        android:src="@drawable/outline_close_black_18"
+        android:text="Button"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/doc2"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintTop_toTopOf="@+id/doc2" />
+
+    <Button
+        android:id="@+id/doc3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="#BDBDBD"
+        android:text="Design for teapots"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc2" />
+
+    <ImageView
+        android:id="@+id/delete3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:elevation="2dp"
+        android:src="@drawable/outline_close_black_18"
+        android:text="Button"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/doc3"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintTop_toTopOf="@+id/doc3" />
+
+
+
+<!--    <ListView-->
+<!--        android:id="@+id/reportList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title" />-->
 
     <Button
         android:id="@+id/about"
@@ -71,14 +132,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="Button"
+        android:backgroundTint="@color/green"
+        android:text="Добавить"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reportList" />
+        app:layout_constraintTop_toBottomOf="@+id/doc3" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:text="Button"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/reportList" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
