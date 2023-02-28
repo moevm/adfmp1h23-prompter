@@ -1,11 +1,13 @@
 package com.example.prompterapp
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.util.AttributeSet
 import android.view.View
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -18,16 +20,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val title = findViewById<TextView>(R.id.title)
-//        val reports = findViewById<ListView>(R.id.reportList)
-//        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strings)
-//
-//        reports.adapter = adapter
-//        reports.onItemClickListener = OnItemClickListener { parent, v, position, id -> // по позиции получаем выбранный элемент
-//            val selectedItem: String = strings[position]
-//            // установка текста элемента TextView
-//            title.text = selectedItem
-//        }
+        val aboutButton = findViewById<Button>(R.id.about);
+        aboutButton.setOnClickListener {
+            val switcher = Intent(this, AboutActivity::class.java)
+            this.startActivity(switcher)
+        }
     }
 
     override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
