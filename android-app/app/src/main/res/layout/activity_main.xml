@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginHorizontal="20dp"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -53,9 +53,7 @@
         android:elevation="10dp"
         android:src="@drawable/outline_close_black_18"
         android:text="Button"
-        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="@+id/doc1"
-        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintTop_toTopOf="@+id/doc1" />
 
     <Button
@@ -77,9 +75,7 @@
         android:elevation="10dp"
         android:src="@drawable/outline_close_black_18"
         android:text="Button"
-        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="@+id/doc2"
-        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintTop_toTopOf="@+id/doc2" />
 
 
@@ -102,12 +98,8 @@
         android:elevation="10dp"
         android:src="@drawable/outline_close_black_18"
         android:text="Button"
-        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="@+id/doc3"
-        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintTop_toTopOf="@+id/doc3" />
-
-
     <Button
         android:id="@+id/about"
         android:layout_width="wrap_content"
@@ -133,15 +125,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doc3" />
 
-<!--    <Button-->
-<!--        android:id="@+id/button2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="70dp"-->
-<!--        android:text="Button"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/reportList" />-->
+    <!--    <Button-->
+    <!--        android:id="@+id/button2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:text="Button"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/reportList" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
