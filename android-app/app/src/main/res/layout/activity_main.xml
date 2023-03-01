@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginHorizontal="20dp"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -50,10 +50,11 @@
         android:id="@+id/delete"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
         android:elevation="10dp"
         android:src="@drawable/outline_close_black_18"
         android:text="Button"
-        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="@+id/doc1"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintTop_toTopOf="@+id/doc1" />
@@ -74,10 +75,11 @@
         android:id="@+id/delete2"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
         android:elevation="10dp"
         android:src="@drawable/outline_close_black_18"
         android:text="Button"
-        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="@+id/doc2"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintTop_toTopOf="@+id/doc2" />
@@ -99,15 +101,14 @@
         android:id="@+id/delete3"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
         android:elevation="10dp"
         android:src="@drawable/outline_close_black_18"
         android:text="Button"
-        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="@+id/doc3"
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintTop_toTopOf="@+id/doc3" />
-
-
     <Button
         android:id="@+id/about"
         android:layout_width="wrap_content"
@@ -132,5 +133,4 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doc3" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
