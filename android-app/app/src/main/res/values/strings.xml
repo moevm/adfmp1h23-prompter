@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">PrompterApp</string>
+    <string name="notes_first">
+        • Как разрабатывалась OS\n
+        • Основатели\n
+        • Принципы системы\n
+        • Android 2.0\n
+        • Фрагментация устройств
+    </string>
+    <string name="notes_second">
+        • Преимущества\n
+        • Недостатки\n
+        • Что стало с Nokia Lumia\n
+        • Что старше: Android или iOS\n
+        • Не только про телефоны
+    </string>
 </resources>

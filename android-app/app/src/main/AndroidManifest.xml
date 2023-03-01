@@ -26,6 +26,10 @@
                 android:value="" />
         </activity>
         <activity android:name=".AboutActivity" />
+        <activity android:name=".NotesFirstActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".NotesSecondActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".PresentationFirstActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".PresentationSecondActivity" android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
